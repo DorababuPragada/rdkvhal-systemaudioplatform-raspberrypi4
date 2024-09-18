@@ -32,7 +32,6 @@ pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
 # Build system audio platform library
 set(Platform_SOURCES
         systemaudioplatform.cpp
-        logger.cpp
    )
 add_library(systemaudioplatform  SHARED ${Platform_SOURCES})
 
