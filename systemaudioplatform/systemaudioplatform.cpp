@@ -1,5 +1,4 @@
 #include "systemaudioplatform.h"
-#include "logger.h"
 #include <cmath>
 
 void systemAudioInitialize()
