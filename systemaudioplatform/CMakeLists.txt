@@ -35,7 +35,6 @@ set(Platform_SOURCES
    )
 add_library(systemaudioplatform  SHARED ${Platform_SOURCES})
 
-set(AUDIO_CLIENT_LIB "RtkHALMisc")
 
 
 target_include_directories(systemaudioplatform PRIVATE ${GSTREAMER_INCLUDES})
@@ -43,7 +42,6 @@ target_include_directories(systemaudioplatform PRIVATE ${GSTREAMERBASE_INCLUDE_D
 
 target_link_libraries(systemaudioplatform PRIVATE ${GSTREAMER_LIBRARIES})
 target_link_libraries(systemaudioplatform PRIVATE ${GSTREAMERBASE_LIBRARIES})
-target_link_libraries(systemaudioplatform PRIVATE ${AUDIO_CLIENT_LIB})
 
 
 install(TARGETS systemaudioplatform LIBRARY DESTINATION lib)
